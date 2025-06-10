@@ -23,14 +23,14 @@ const AnimatedCard3 = ({  onClose, onBack }) => {
           <img
             src={UNFIEDMODAL}
             alt="Travel App"
-            className="object-fill w-[1000px] h-full"
+            className="object-fill w-full h-full"
           />
         </div>
 
         
 
        
-        <div className="flex-grow p-5 space-y-4 overflow-y-auto text-sm text-gray-300">
+        <div className="flex-grow p-5 space-y-4 text-sm text-gray-300 overflow-y-auto h-full max-h-[calc(100%-400px)]">
           <h6 className="text-2xl font-bold font-poppins">Cebuana International</h6> 
           <h2 className="text-xl font-bold font-poppins text-start">Overview</h2>
           <p className="text-left">
