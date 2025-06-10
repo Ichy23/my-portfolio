@@ -30,7 +30,7 @@ const AnimatedCard3 = ({  onClose, onBack }) => {
         
 
        
-        <div className="p-5 space-y-3 text-sm text-gray-300 overflow-y-auto h-full max-h-[calc(100%-400px)]">
+        <div className="flex-grow p-5 space-y-4 overflow-y-auto text-sm text-gray-300">
           <h6 className="text-2xl font-bold font-poppins">Cebuana International</h6> 
           <h2 className="text-xl font-bold font-poppins text-start">Overview</h2>
           <p className="text-left">
