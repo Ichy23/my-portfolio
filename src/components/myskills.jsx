@@ -41,7 +41,7 @@ export default function MySkills() {
             custom={index}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} // triggers when 30% is visible
+            viewport={{ once: true, amount: 0.3 }} 
             variants={skillVariants}
           >
             <img

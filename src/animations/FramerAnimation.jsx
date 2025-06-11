@@ -18,7 +18,7 @@ const AnimatedCard = ({ onClose }) => {
         className="bg-zinc-900 text-white rounded-3xl overflow-hidden shadow-2xl w-[90%] max-w-[800px] h-[90%] max-h-[800px] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Image section */}
+       
         <div className="relative h-56 md:h-[400px] flex-shrink-0">
           <img
             src={GPTTBG}
@@ -27,7 +27,6 @@ const AnimatedCard = ({ onClose }) => {
           />
         </div>
 
-        {/* Scrollable content */}
         <div className="flex-grow p-5 space-y-3 overflow-y-auto text-sm text-gray-300">
           <h2 className="text-xl font-bold text-start font-poppins">Overview</h2>
           <p className="text-left">

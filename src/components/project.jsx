@@ -14,7 +14,7 @@ const [activeCard, setActiveCard] = useState({ type: null, step: 1 });
 
 
   return (
-    <div id="projects" className="flex flex-col items-center px-10 py-16 text-center">
+    <div id="projects" className="flex flex-col items-center py-16 text-center">
       <a href="#projects-section" className="block text-center cursor-pointer group">
         <div className="text-center cursor-pointer group">
           <h1 className="mb-2 text-2xl font-medium text-white font-poppins tracking-[10.08px] transition duration-300 group-hover:opacity-80 group-hover:scale-105">
@@ -52,33 +52,44 @@ const [activeCard, setActiveCard] = useState({ type: null, step: 1 });
         </div>
       </a>
 
-      <div id="projects-section" className="relative z-10 flex flex-col items-center gap-10 mt-20">
-        <div className="relative">
-          <img
-            src={ProjectBackground}
-            className=" top-0 left-0 z-0 w-[1392px] h-[1044px]"
-            alt="Background"
-          />
-          <img src={GPTT} className="top-28 absolute w-[1244px] h-[824px] z-20" alt="GPTT Foreground" />
-          <p
-            className="absolute top-44 left-10 text-xl text-blue-300 font-bold font-poppins tracking-[6.40px] cursor-pointer flex items-center gap-2 z-20"
-            onClick={() => setActiveCard({ type: 'gptt', step: 1 })}
-          >
-            TRAVEL APP <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
-          </p>
+      <div id="projects-section" className="project-section">
+        <div className="relative flex flex-col items-center ">
+            <img
+              src={ProjectBackground}
+              className="relative top-0 left-0 z-0 w-auto h-auto"
+              alt="Project Background"
+              style={{ objectFit: 'cover' }}
+            />
+          <div className="absolute inset-0 z-20 flex flex-col items-center px-4 sm:px-8">
+            <p
+              className="mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-sm sm:text-base md:text-lg lg:text-xl text-blue-300 font-bold font-poppins tracking-[6.40px] cursor-pointer flex items-center gap-2"
+              onClick={() => setActiveCard({ type: 'gptt', step: 1 })}
+            >
+              GPTT APP <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
+            </p>
+              <img
+                src={GPTT}
+                alt="GPTT project"
+                className="object-contain h-auto max-w-full mt-4 sm:mt-8 md:mt-10 lg:mt-2"
+              />
+          </div>
         </div>
 
-        <div className="relative flex flex-col items-center mt-2 ">
+        <div className="relative flex flex-col items-center mx-4 mt-12 sm:mx-8">
           <p
-            className="text-xl text-blue-300 font-bold font-poppins tracking-[6.40px] cursor-pointer flex items-center gap-2 z-20"
+            className="sm:text-lg md:text-xl text-blue-300 font-bold font-poppins tracking-[6.40px] sm:tracking-[6.40px] cursor-pointer flex items-center gap-2 z-20 text-center"
            onClick={() => setActiveCard({ type: 'ewallet', step: 1 })}
           >
-            E-WALLET APP <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
+            Unified App <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
           </p>
-          <img src={UNIFIED} className="w-[1433px] h-[952px]" alt="UPS Foreground" />
+          <img
+            src={UNIFIED}
+            alt="E-wallet App"
+            className="object-contain h-auto max-w-full mt-3 "
+          />
         </div>
 
-        <div className="relative flex flex-col items-center mt-7">
+        <div className="relative flex flex-col items-center mt-36">
           <img src={LogoVector} className="" alt="" />
         </div>
       </div>

@@ -16,12 +16,9 @@ const Nav = () => {
 
   return (
     <>
-      {/* Top Navigation Bar */}
+
       <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full px-6 py-4 backdrop-blur-sm">
-        {/* Logo or Name */}
-        {/* <a href="#" className="flex items-center text-2xl font-bold tracking-wider text-white font-poppins">
-          <CgNametag className="mr-2" /> ICHY
-        </a> */}
+     
 
 
        <div className="hidden space-x-4 lg:flex">

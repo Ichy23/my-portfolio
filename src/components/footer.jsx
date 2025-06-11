@@ -26,7 +26,7 @@ export default function Footer() {
             </FadeInFromBottom>
           </div>
 
-          <div className="justify-items-center">
+          <div className="flex justify-center">
              <FadeInFromBottom delay={0.7}>
             <a href="mailto:buluran.c.work@gmail.com?subject=Let's%20Connect&body=Hi%20Christopher,%0D%0AI'm%20interested%20in%20your%20work..." className="block w-96 h-14 relative justify-center rounded-[10px] group transition-transform duration-200 hover:scale-105">
               <button className="bg-[#92BEFF] group-hover:text-blue-900 text-white px-10 py-2 my-3 rounded-[30px] ">
@@ -57,7 +57,7 @@ export default function Footer() {
                 rel="noopener noreferrer" className="block transition-transform duration-200 group hover:scale-105">
                 <img src={LinkedInVector} className="w-[40px] h-[40px]" alt="LinkedIn" />
               </a>
-              <a href="mailto:buluran.c.work@gmail.com?subject=Let's%20Connect&body=Hi%20Christopher,%0D%0AI'm%20interested%20in%20your%20work..." className="block transition-transform duration-200 group hover:scale-105">
+              <a href={`mailto:buluran.c.work@gmail.com?subject=${encodeURIComponent("Let's Connect")}&body=${encodeURIComponent("Hi Christopher,\nI'm interested in your work...")}`} className="block transition-transform duration-200 group hover:scale-105">
                 <img src={EmailVector} className="w-[40px] h-[40px]" alt="Email" />
               </a>
 

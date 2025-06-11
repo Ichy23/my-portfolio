@@ -10,9 +10,8 @@ const Main = () => {
   return (
 
     <div
-      // className="min-h-screen overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #92BEFF -20%, #3A7BDD 20%, #1F4277 45%)",
+        background: "linear-gradient(180deg, #92BEFF -20%, #3A7BDD 20%, #1F4277 35%)",
       }}
     >
       

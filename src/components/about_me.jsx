@@ -4,14 +4,13 @@ export default function AboutMe() {
   return (
     <div id="about" className="relative -mt-3 z-10 bg-[#0A2856] w-full">
       <div className="px-6 py-16 mx-16 text-center md:px-10">
-        {/* Animate Heading */}
+ 
         <FadeInWhenVisible>
           <h2 className="mb-10 text-3xl text-white font-poppins tracking-[10.08px]">
             About Me
           </h2>
         </FadeInWhenVisible>
 
-        {/* Animate each paragraph independently */}
         <div className="mx-auto space-y-6 text-lg leading-relaxed tracking-wide text-center text-white font-poppins">
           <FadeInWhenVisible>
             <p>
