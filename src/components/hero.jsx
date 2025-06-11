@@ -60,21 +60,28 @@ const Hero = () => {
         <div className="items-center w-1/3 pb-0 mb-0 ssm:w-fit">
             <AnimatedImage src={HeroPic} alt="" width={603} height={699}/>
         </div>
-        <div className="relative h-auto space-y-2 w-96">
-            <div className="flex flex-col px-16 text-left">
-             <SlideInFromRight> <span className="text-4xl font-semibold font-['Poppins']" style={{ color: '#FFFFFF' }}>
-                Junior
-              </span></SlideInFromRight> 
-              </div>
-              <div className="flex flex-col text-right">
-            <SlideInFromRight> <span className="text-right text-4xl font-extrabold font-poppins text-[#92BEFF] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.4)]">
-                Mobile Developer
-            </span></SlideInFromRight>
-            </div>  
+       <div className="relative max-w-sm px-6 mx-auto my-8 space-y-2">
+       <div className="flex flex-col text-left">
+          <SlideInFromRight>
+            <span className="text-4xl font-semibold font-['Poppins'] text-white">
+              Junior
+            </span>
+          </SlideInFromRight>
+        </div>
 
-            <SlideInFromRight> <p className="justify-center h-24 mt-4 text-right text-white w-96 text-l font-poppins">
-              I learn fast by doing risky things, merging without double-checking, chasing bugs in production, and embracing chaos. Otherwise, how would I grow?
-            </p></SlideInFromRight>
+  <div className="flex flex-col text-left">
+    <SlideInFromRight>
+      <span className="text-4xl font-extrabold font-poppins text-[#92BEFF] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.4)]">
+        Mobile Developer
+      </span>
+    </SlideInFromRight>
+  </div>
+
+  <SlideInFromRight>
+    <p className="px-2 text-base text-right text-white font-poppins">
+      I learn fast by doing risky things, merging without double-checking, chasing bugs in production, and embracing chaos. Otherwise, how would I grow?
+    </p>
+  </SlideInFromRight>
 
            <div className="flex justify-center gap-4 mt-1 font-normal text-white font-poppins text-opacity-65">
            <AnimatedLinkGroup links={navLinks} className="mt-2 mb-5" />

@@ -19,6 +19,14 @@ const AnimatedCard = ({ onClose, onNext }) => {
         className="bg-zinc-900 text-white rounded-3xl overflow-hidden shadow-2xl w-[90%] max-w-[800px] h-[90%] max-h-[700px] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
+        <button
+          onClick={onClose}
+          className="absolute z-10 p-2 text-4xl leading-none text-white rounded-full top-5 right-4 md:text-3xl hover:bg-blue-900"
+          aria-label="Close modal"
+        >
+        &times;
+        </button>
+
         <div className="relative h-60 md:h-[400px] flex-shrink-0">
           <img
             src={UNFIEDMODAL}
@@ -57,7 +65,7 @@ const AnimatedCard = ({ onClose, onNext }) => {
             onClick={onNext}
             className="p-2 text-black transition bg-white rounded-full shadow-md hover:scale-110"
           >
-            <ChevronRight className="w-10 h-10" />
+            <ChevronRight className="w-4 h-4" />
           </button>
         </div>
 

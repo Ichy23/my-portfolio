@@ -18,6 +18,13 @@ const AnimatedCard = ({ onClose }) => {
         className="bg-zinc-900 text-white rounded-3xl overflow-hidden shadow-2xl w-[90%] max-w-[800px] h-[90%] max-h-[800px] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
+        <button
+          onClick={onClose}
+          className="absolute z-10 p-2 text-4xl leading-none text-white rounded-full top-1 right-4 md:text-3xl hover:bg-blue-900"
+          aria-label="Close modal"
+        >
+        &times;
+        </button>
        
         <div className="relative h-56 md:h-[400px] flex-shrink-0">
           <img
