@@ -16,21 +16,18 @@ const AnimatedCard3 = ({  onClose, onBack }) => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 50, opacity: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="bg-zinc-900 text-white rounded-3xl overflow-hidden shadow-2xl w-[90%] max-w-[800px] h-[90%] max-h-[700px]"
+        className="bg-zinc-900 text-white rounded-3xl overflow-hidden shadow-2xl w-[90%] max-w-[800px] h-[90%] max-h-[700px] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative overflow-hidden md:h-[400px]">
+        <div className="relative overflow-hidden h-[200px] md:h-[400px] flex-shrink-0">
           <img
             src={UNFIEDMODAL}
-            alt="Travel App"
+            alt="Cebuana International"
             className="object-fill w-full h-full"
           />
         </div>
-
-        
-
        
-        <div className="flex-grow p-5 space-y-4 text-sm text-gray-300 overflow-y-auto h-full max-h-[calc(100%-400px)]">
+        <div className="flex-1 h-full p-5 space-y-4 overflow-y-auto text-sm text-gray-300">
           <h6 className="text-2xl font-bold font-poppins">Cebuana International</h6> 
           <h2 className="text-xl font-bold font-poppins text-start">Overview</h2>
           <p className="text-left">
