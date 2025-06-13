@@ -24,7 +24,7 @@ const PopBounce = ({ children, delay = 0 }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, scale: 1.1 }}
+      initial={{ opacity: 0, scale: 0.6 }}
       animate={controls}
     >
       {children}
