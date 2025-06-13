@@ -44,14 +44,15 @@ export default function Footer() {
             </FadeInFromBottom>
           </div>
 
-          <div className="mt-14 justify-self-center  w-[1246px] h-px opacity-20 bg-white outline outline-1 outline-offset-[-0.50px] outline-white" />
+          <div className="mt-14 w-full max-w-[1246px] h-px opacity-20 bg-white outline outline-1 outline-offset-[-0.5px] outline-white mx-auto" />
+          <div className="relative flex items-center justify-between w-full mt-5">
           
-         <div className="relative flex items-center justify-between w-full px-4 mt-5 sm:px-6 md:px-9">
-            <img 
+           <img 
               src={LOGO} 
-              className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]" 
+              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]" 
               alt="Logo" 
             />
+
 
             <div className="flex space-x-3 sm:space-x-4">
               <a
@@ -66,19 +67,18 @@ export default function Footer() {
                 alt="LinkedIn"
               />
             </a>
+            <a href={`mailto:buluran.c.work@gmail.com?subject=${encodeURIComponent("Let's Connect")}&body=${encodeURIComponent("Hi Christopher,\nI'm interested in your work...")}`}
+              className="block transition-transform duration-200 group hover:scale-105"
+                    >
+              <img
+                src={EmailVector}
+                className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]"
+                alt="Email"
+              />
+            </a>
 
-          <a
-            href={`mailto:buluran.c.work@gmail.com?subject=${encodeURIComponent("Let's Connect")}&body=${encodeURIComponent("Hi Christopher,\nI'm interested in your work...")}`}
-            className="block transition-transform duration-200 group hover:scale-105"
-          >
-            <img
-              src={EmailVector}
-              className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]"
-              alt="Email"
-            />
-          </a>
-        </div>
-      </div>
+            </div>
+          </div>
 
       </div>
     </div>

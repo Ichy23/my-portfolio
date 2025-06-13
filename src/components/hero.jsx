@@ -26,11 +26,11 @@ const Hero = () => {
           </p>
           </FadeInFromTop>
             <div className='mt-2 text-left'> 
-             <SlideInFromLeft><h2 className="mt-4 text-[46px] sm:text-2xl lg:text-[54px] font-semibold text-left
+             <SlideInFromLeft><h2 className="mt-4 text-[46px] sm:text-[54px] lg:text-[54px] font-semibold text-left
               text-white font-poppins leading-[19.74px] tracking-widest">Christopher</h2></SlideInFromLeft>
              <SlideInFromLeft>
               <div className="flex items-center space-x-4">
-                <h2 className="text-[46px] lg:text-[54px] font-semibold tracking-widest text-white font-poppins">
+                <h2 className="text-[46px] sm:text-[54px]  lg:text-[54px] font-semibold tracking-widest text-white font-poppins">
                   Buluran
                 </h2>
                 <div className="w-28 sm:w-28 h-[2px] bg-white" />
