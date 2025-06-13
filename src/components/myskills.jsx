@@ -29,7 +29,7 @@ export default function MySkills() {
   return (
     <FadeInWhenVisible>
       <div id="skills" className="px-10 py-16 text-center">
-        <h1 className="mb-8 text-2xl font-light text-white font-poppins tracking-[10.08px]">
+        <h1 className="mb-8 text-2xl text-white font-poppins tracking-[10.08px] font-medium">
           My Skills
         </h1>
 
@@ -49,7 +49,7 @@ export default function MySkills() {
               alt={skill.name}
               className="w-24 h-24 rounded-xl"
             />
-            <p className="mt-4 text-cyan-300 text-2xl font-poppins tracking-[4.8px] whitespace-pre-line text-center">
+            <p className="mt-4 text-cyan-300 text-1xl font-poppins tracking-[4.8px] whitespace-pre-line text-center">
               {skill.name}
             </p>
             </motion.div>

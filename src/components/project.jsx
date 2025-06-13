@@ -8,6 +8,7 @@ import AnimatedCard2 from '../animations/FramerAnimation2';
 import AnimatedCard3 from '../animations/FramerAnimation3';
 import UNIFIED from '../assets/Unified.png';
 import LogoVector from '../assets/LogoVector.png';
+import PopBounce from '../animations/PopBounce';
 
 export default function Project() {
 const [activeCard, setActiveCard] = useState({ type: null, step: 1 });
@@ -67,11 +68,12 @@ const [activeCard, setActiveCard] = useState({ type: null, step: 1 });
             >
               GPTT APP <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
             </p>
-              <img
+            <PopBounce delay={0.6}><img
                 src={GPTT}
                 alt="GPTT project"
                 className="object-contain h-auto max-w-full mt-4 sm:mt-8 md:mt-10 lg:mt-2"
               />
+            </PopBounce> 
           </div>
         </div>
 
@@ -82,11 +84,12 @@ const [activeCard, setActiveCard] = useState({ type: null, step: 1 });
           >
             Unified App <span className="text-sm text-blue-200 animate-pulse">(Click)</span>
           </p>
-          <img
+         <PopBounce delay={0.6}><img
             src={UNIFIED}
             alt="E-wallet App"
             className="object-contain h-auto max-w-full mt-3 "
           />
+          </PopBounce> 
         </div>
 
         <div className="relative flex flex-col items-center mt-36">

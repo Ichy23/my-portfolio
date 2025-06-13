@@ -6,7 +6,7 @@ export default function AboutMe() {
       <div className="px-6 py-16 mx-16 text-center md:px-10">
  
         <FadeInWhenVisible>
-          <h2 className="mb-10 text-3xl text-white font-poppins tracking-[10.08px]">
+          <h2 className="mb-10 text-3xl text-white font-medium  font-poppins tracking-[10.08px]">
             About Me
           </h2>
         </FadeInWhenVisible>
