@@ -39,30 +39,46 @@ export default function Footer() {
           <div className="justify-start mt-20 text-center">
             <FadeInFromBottom delay={0.9}>
             <p className="text-sm italic text-white font-extralight font-poppins opacity-80">
-              Non Copyrighted © 2025 Design by Ckloie A. and Programmed by Christopher Buluran
+              Non Copyrighted © 2025 Designed by Ckloie A. and Programmed by Christopher Buluran
             </p>
             </FadeInFromBottom>
           </div>
 
           <div className="mt-14 justify-self-center  w-[1246px] h-px opacity-20 bg-white outline outline-1 outline-offset-[-0.50px] outline-white" />
           
-          <div className="relative flex items-center justify-between w-full mt-5 px-9">
-          
-            <img src={LOGO} className="w-[40px] h-[40px]" alt="Logo" />
+         <div className="relative flex items-center justify-between w-full px-4 mt-5 sm:px-6 md:px-9">
+            <img 
+              src={LOGO} 
+              className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]" 
+              alt="Logo" 
+            />
 
+            <div className="flex space-x-3 sm:space-x-4">
+              <a
+                href="https://www.linkedin.com/in/christopherbuluran/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block transition-transform duration-200 group hover:scale-105"
+              >
+              <img
+                src={LinkedInVector}
+                className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]"
+                alt="LinkedIn"
+              />
+            </a>
 
-            <div className="flex space-x-4">
-              
-              <a href="https://www.linkedin.com/in/christopherbuluran/" target="_blank" 
-                rel="noopener noreferrer" className="block transition-transform duration-200 group hover:scale-105">
-                <img src={LinkedInVector} className="w-[40px] h-[40px]" alt="LinkedIn" />
-              </a>
-              <a href={`mailto:buluran.c.work@gmail.com?subject=${encodeURIComponent("Let's Connect")}&body=${encodeURIComponent("Hi Christopher,\nI'm interested in your work...")}`} className="block transition-transform duration-200 group hover:scale-105">
-                <img src={EmailVector} className="w-[40px] h-[40px]" alt="Email" />
-              </a>
-
-            </div>
-          </div>
+          <a
+            href={`mailto:buluran.c.work@gmail.com?subject=${encodeURIComponent("Let's Connect")}&body=${encodeURIComponent("Hi Christopher,\nI'm interested in your work...")}`}
+            className="block transition-transform duration-200 group hover:scale-105"
+          >
+            <img
+              src={EmailVector}
+              className="w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-[40px] lg:h-[40px]"
+              alt="Email"
+            />
+          </a>
+        </div>
+      </div>
 
       </div>
     </div>
